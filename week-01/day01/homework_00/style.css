@@ -1,2 +1,62 @@
-font-family: 'Courier Prime', monospace;
-font-family: 'Lato', sans-serif;
+main{
+    padding: 10%;
+    font-size: 14px;
+    line-height: 20px;
+}
+body{
+    background: url("assets/topography.png") repeat;
+    font-family: 'Courier Prime', monospace;
+}
+header{
+    background-color: #333333;
+    padding: 10px 0px 10px 0px;
+    margin: -10px -8px 0px -8px;
+    font-family: 'Courier Prime', monospace;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.button{
+    color: #ff0099;
+    font-size: 12px;
+    padding-left: 30px;
+}
+.first{
+    padding-left: 70px;
+}
+.last{
+    padding-right: 10%;
+}
+a:hover{
+    color: darkgrey;
+}
+img{
+    position: absolute;
+    top: 5px;
+    left: 10%;
+    height: 20px;
+}
+h1{
+    font-size: 38px;
+    line-height: 38px;
+}
+h2{
+    color: #ff0099;
+    font-size: 24px;
+    line-height: 24px;
+}
+.separator{
+    font-size: 12px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+.aboutme{
+    font-size: 16px;
+}
+.title{
+    font-size: 24px;
+    font-weight: 600;
+}
