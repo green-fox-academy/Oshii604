@@ -24,6 +24,10 @@ form{
     font-size: 12px;
     line-height: 22px;
 }
+textarea{
+    resize: none;
+
+}
 .content{
     padding: 5px;
     margin-bottom: 10px;
