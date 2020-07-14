@@ -31,3 +31,7 @@ form{
     box-sizing: border-box;
     border: solid black 0.5px;
 }
+button{
+    border-radius: 2px;
+    border-width: 0.5px;
+}
