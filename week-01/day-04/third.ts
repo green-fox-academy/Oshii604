@@ -194,7 +194,7 @@ if (thirsty && hungry) {
 }
 */
 
-
+/*
 let a: number = 24;
 let out: number = 0;
 
@@ -217,11 +217,22 @@ if(b > 10 && b < 20) {
 }
 
 console.log(out2);
-
+*/
 
 let c: number = 123;
-let credits: number = 100;
+let credits: number = 10;
 let isBonus: boolean = false;
+
+//ezt speciel nem értem, miért így működik :D
+if(credits >= 50 && !isBonus){
+    c = c - 2;
+}
+else if(credits < 50 && !isBonus){
+    c = c - 1;
+}
+else{
+    c = c
+}
 
 // if credits are at least 50,
 // and is_bonus is false decrement c by 2
