@@ -217,7 +217,8 @@ if(b > 10 && b < 20) {
 }
 
 console.log(out2);
-*/
+
+
 
 let c: number = 123;
 let credits: number = 10;
@@ -241,3 +242,29 @@ else{
 // if is_bonus is true c should remain the same
 
 console.log(c);
+*/
+
+
+let lineCount: number = 4;   
+
+for(let i = 1; i <= lineCount; i++) {
+let str = '';
+
+    //Add the white space to the left
+    for(let k = 1; k <= lineCount - i; k++) {
+        str += ' ';
+    }
+
+    //Add the '*' for each row
+    for(let j = 0; j != (2 * i - 1); j++){
+        str += '*';
+    }
+
+    //Add the white space to the right
+    for(let k = 1; k <= lineCount - i; k++) {
+        str += ' ';
+    }
+
+      //Print the pyramid pattern for each row
+      console.log(str);
+   }
