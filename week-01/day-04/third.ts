@@ -1,3 +1,5 @@
+'use strict'
+
 /*
 let myName:string = 'Oshii';
 
@@ -217,7 +219,7 @@ if(b > 10 && b < 20) {
 }
 
 console.log(out2);
-*/
+
 
 let c: number = 123;
 let credits: number = 10;
@@ -241,3 +243,29 @@ else{
 // if is_bonus is true c should remain the same
 
 console.log(c);
+*/
+
+
+let d: number =  9;
+let time: number = 220;
+let out3: string = '';
+
+if(d % 4 == 0 && time <= 200){
+    out3 = `check`
+}
+
+else if(d % 4 == 0 && time > 200){
+    out3 = `Time out`
+}
+else{
+    out3 = `Run Forest, Run!`
+}
+
+// if d is dividable by 4
+// and time is not more than 200
+// set out3 to "check"
+// if time is more than 200
+// set out3 to "Time out"
+// otherwise set out3 to "Run Forest Run!"
+
+console.log(out3);
