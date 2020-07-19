@@ -15,7 +15,7 @@ for(var i = 0;i<names.length;i++) {
 }
 */
 
-
+/*
 let vegetables :string[] = [`Carrot`, `Potato`, `Salad`, `Cabbabe`, `Tomato`]
 
 let first  = vegetables[0]
@@ -53,4 +53,23 @@ vegetables.push(`Eggplant`);
 let pos = vegetables.indexOf(`Salad`);
 console.log(pos);
 
+*/
 
+const evens = [2, 4, 6, 8];
+const numbers = [1, 3, 5, 7, ...evens];
+console.log(numbers);
+
+
+let arr1 = [0, 1, 2];
+let arr2 = [3, 4, 5];
+
+arr1 = [...arr1, ...arr2];
+console.log(arr1);
+
+
+let fruits: string [] = ['apple', 'pear', 'melon']
+console.log(fruits.indexOf('pear'));
+
+['apple', 'pear', 'melon'].forEach(function(e, i) {
+    console.log(e, i);
+  });

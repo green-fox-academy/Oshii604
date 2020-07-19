@@ -56,12 +56,13 @@ console.log(newArr[3]);
 }
 
 //Increment element
+{
 let numbers: number[] = [1, 2, 3, 4, 5]
 
 numbers[2] ++
 
 console.log(numbers[2]);
-
+}
 
 //Append -a
 
@@ -70,19 +71,50 @@ animals = animals.map(item => item + `a`);
 
 console.log(animals);
 
-
-let drinks: string[] = ['Gin', 'Whiskey', 'Wine', 'Beer']
-drinks = drinks.map(item => item + item)
+//Double items
+let drinks: string[] = ['Gin', 'Whiskey', 'Wine', 'Beer'];
+drinks = drinks.map(item => item + item);
 
 console.log(drinks);
 
 
 //Colors
 
-let colors: string[] = []
-
-
+let colors: string[][] = [
+["lime", "forest green", "olive", "pale green", "spring green"],
+["orange red", "red", "tomato"],
+["orchid", "violet", "pink", "hot pink"]
+];
 
 console.log(colors[0]);
 console.log(colors[1]);
 console.log(colors[2]);
+
+//Sum all elements
+{
+let numbers: number [] = [3, 4, 5, 6, 7];
+let sum: number = 0;
+for(let i = 0; i < numbers.length; i++) {
+    sum += numbers[i]
+}
+
+console.log(sum);
+}
+
+//Matrix (undone)
+
+let matrix: number[][] = [];
+let n: number = matrix.length;
+
+
+
+//Reverse list (undone)
+
+//Built-in method
+{
+let numbers: number[] = [3, 4, 5, 6, 7].reverse();
+console.log(numbers);
+}
+//own method
+
+
