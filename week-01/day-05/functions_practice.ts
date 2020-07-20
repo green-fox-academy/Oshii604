@@ -1,4 +1,4 @@
-{
+/*{
 function getAverage (a, b, c, d)
 //let getAverage = function (a, b, c, d)
 {
@@ -169,3 +169,40 @@ function calculate_discount(price:number,rate:number = 0.50) {
  } 
  calculate_discount2(0.5);
  calculate_discount2(0.3, 2000);
+*/
+
+function greet(): string {
+    return "Hello World"
+}
+function caller() {
+    var msg = greet()
+    console.log(msg)
+}
+caller()
+
+//Kind of the same:
+/*
+function greet(): string {
+    return "Hello World"
+}
+console.log(greet())
+
+
+//Next
+
+let doubleTheSum = new Function("a", "b", "return a * b * 2"); 
+let x = doubleTheSum(2, 8); 
+console.log(x);
+*/
+
+
+//Next - Recursion
+
+function factorial(number) {
+    if (number <= 0) {
+        return 1;
+    } else {
+        return (number * factorial(number - 1));
+    }
+};
+console.log(factorial(4));
