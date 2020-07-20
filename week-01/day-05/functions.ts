@@ -56,8 +56,8 @@ sum (12)
 let factorial: number = 1; 
 
 function factorio(x){
-for(let i: number = x; i >= 1; i--) {
-   factorial *= i;
+    for(let i: number = x; i >= 1; i--) {
+    factorial *= i;
 }
 console.log(factorial)
 }
@@ -72,4 +72,18 @@ function printParams(...string){
     
 }
 printParams(`Hello`)
-printParams(`Hello mindenki, ez tényleg ilyen egyszerű feladat volt?`)
+printParams(`Hello mindenki! A "Print arguments" tényleg ilyen egyszerű feladat volt?`)
+
+
+//Unique
+function unique(arr) {
+    let uniq = arr.filter((v, i, a) => a.indexOf(v) === i);
+    console.log(uniq);
+}
+
+unique([1, 11, 34, 11, 52, 61, 1, 34])
+unique([2, 4, 6, 3, 12, 2, 6, 7, 4, 4, 2, 12, 7, 3])
+
+//Sort that list
+
+//..to be continued..
