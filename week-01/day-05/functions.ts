@@ -42,6 +42,7 @@ let add: number = 0;
 function sum(x){
     for(let i: number = 0; i <= x; i++){
        add += i;
+       return add;
     }
 console.log(add);
     }
@@ -58,6 +59,7 @@ let factorial: number = 1;
 function factorio(x){
     for(let i: number = x; i >= 1; i--) {
     factorial *= i;
+    return factorial;
 }
 console.log(factorial)
 }
@@ -79,6 +81,7 @@ printParams(`Hello mindenki! A "Print arguments" tényleg ilyen egyszerű felada
 function unique(arr) {
     let uniq = arr.filter((v, i, a) => a.indexOf(v) === i);
     console.log(uniq);
+    return uniq;
 }
 
 unique([1, 11, 34, 11, 52, 61, 1, 34])
