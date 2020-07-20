@@ -219,13 +219,18 @@ if(b > 10 && b < 20) {
 }
 
 console.log(out2);
+*/
 
+// if credits are at least 50,
+// and is_bonus is false decrement c by 2
+// if credits are smaller than 50,
+// and is_bonus is false decrement c by 1
+// if is_bonus is true c should remain the same
 
 let c: number = 123;
 let credits: number = 10;
 let isBonus: boolean = false;
 
-//ezt speciel nem értem, miért működik így is.. :D
 if(credits >= 50 && !isBonus){
     c = c - 2;
 }
@@ -235,15 +240,9 @@ else if(credits < 50 && !isBonus){
 else{
     c = c
 }
-
-// if credits are at least 50,
-// and is_bonus is false decrement c by 2
-// if credits are smaller than 50,
-// and is_bonus is false decrement c by 1
-// if is_bonus is true c should remain the same
-
 console.log(c);
-*/
+
+/*
 
 
 let d: number =  9;
@@ -269,3 +268,4 @@ else{
 // otherwise set out3 to "Run Forest Run!"
 
 console.log(out3);
+*/
