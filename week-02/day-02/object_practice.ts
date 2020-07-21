@@ -157,12 +157,4 @@ function uniqueWithLoop(input: number[]) {
 }
 console.log(uniqueWithLoop([1, 11, 34, 11, 52, 61, 1, 34]))
 
-function changeNumber(number: number){
-    number = 5;
-}
 
-let inputNumber = 10;
-
-changeNumber(inputNumber);
-
-console.log(inputNumber);

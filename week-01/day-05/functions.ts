@@ -89,6 +89,33 @@ function unique(arr) {
 unique([1, 11, 34, 11, 52, 61, 1, 34])
 unique([2, 4, 6, 3, 12, 2, 6, 7, 4, 4, 2, 12, 7, 3])
 
+//Unique again with loop
+
+
+//  Create a function that takes a list of numbers as a parameter
+//  Returns a list of numbers where every number in the list occurs only once
+
+function uniqueWithLoop(input: number[]) {
+    let result: number[] = [];
+    //input.forEach(function(number:number))
+    input.forEach((number: number) => {
+        let alreadyInResult = false;
+        result.forEach((resultNumber: number) => {
+            if (resultNumber === number) {
+                alreadyInResult = true
+            }
+        })
+        if(!alreadyInResult){
+            result.push(number);
+        }
+    })
+    return result;
+}
+
+//  Example
+console.log(uniqueWithLoop([1, 11, 34, 11, 52, 61, 1, 34]))
+//  should print: `[1, 11, 34, 52, 61]`
+
 
 //Sort that list
 /*
@@ -154,8 +181,7 @@ console.log(bubbleSort2([34, 12, 24, 9, 5], true));
 
 //Subint
 /* Jó, hát ez még kurvára nem megy :D
-l
-et found: number[];
+let found: number[];
 function subint(x: number, array: number[]): number[] {
     let n: number;
     for (let i: number = 0; i < array.length; i++)
@@ -171,3 +197,4 @@ console.log(subint(1, [1, 11, 34, 52, 61]));
 console.log(subint(3, [1, 11, 34, 52, 61]));
 // should print: '[]'
 */
+

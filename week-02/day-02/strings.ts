@@ -77,3 +77,21 @@ let quote: string = `Hofstadter's Law: It you expect, even when you take into ac
 quote = [quote.slice(0, 20) + ` always takes longer than` + quote.slice(20)].join(``)
 
 console.log(quote);
+
+
+//todo-prints  - WIP
+
+// Add "My todo:" to the beginning of the todoText
+// Add " - Download games" to the end of the todoText
+// Add " - Diablo" to the end of the todoText but with indention
+
+// Expected output:
+
+// My todo:
+//  - Buy milk
+//  - Download games
+//      - Diablo
+
+let todoText: string = ' - Buy milk\n';
+
+console.log(todoText);
