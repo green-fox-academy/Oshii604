@@ -18,11 +18,18 @@ console.log(example);
 }
 
 //Avagy mindez egyszerűbben:
-
+{
 let example: string = 'In a dishwasher far far away';
 //let wtc: string = `dishwasher`;
 let newSentence: string = example.replace(`dishwasher`, `galaxy`); //dishwasher helyére meg mehet a wtc
 example = newSentence;
+console.log(example);
+}
+
+//még egyszerűbben :D
+
+let example: string = 'In a dishwasher far far away';
+example = example.replace(`dishwasher`, `galaxy`);
 console.log(example);
 
 //Reverse
