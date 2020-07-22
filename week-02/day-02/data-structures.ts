@@ -1,6 +1,6 @@
 
 //List introduction 1
-
+/*
 {
     let names: string[] = [];
 
@@ -36,7 +36,7 @@
     
         console.log(names);
     */
-
+/*
     names.reverse().forEach(listing3);
     function listing3(item: string) {
         console.log(item);
@@ -160,4 +160,59 @@ for (let [key, value] of isbnMap.entries()) {
 console.log(isbnMap.has(`478-0-61159-424-8`));
 
 console.log(isbnMap.get(`978-1-60309-453-5`));
+*/
+
+//Personal Finance
+
+let myMoney: number[] = [500, 1000, 1250, 175, 800, 120];
+
+function doTheMath(arr: number[]) {
+    {
+        let add: number = 0;
+        for (let i = 0; i < myMoney.length; i++) {
+            add += myMoney[i]
+
+        }
+        console.log(add);
+        console.log(Math.max(...myMoney));
+        console.log(Math.min(...myMoney));
+        console.log((add / myMoney.length).toFixed(2));
+    }
+}
+doTheMath(myMoney);
+
+
+//Telephone book
+
+
+let phoneBook = new Map();
+
+phoneBook.set(`William A. Lathan`, `405-709-1865`)
+    .set(`John K. Miller`, `402-247-8568`)
+    .set(`Hortensia E. Foster`, `606-481-6467`)
+    .set(`Amanda D. Newland`, `319-243-5613`)
+    .set(`Brooke P. Askew`, `307-687-2982`)
+
+function letMeTell() {
+
+    console.log(phoneBook.get(`John K. Miller`));
+
+    let recall: string;
+    for (let [key, value] of phoneBook.entries()) {
+        if (value === `307-687-2982`) {
+            recall = key;
+        }
+    }
+    console.log(recall);
+
+    if (!phoneBook.has(`Chris E. Myers`)) {
+        console.log(`No entry on this name`);
+    }
+   // else {
+   //     console.log(`There is a Chris E. Myers in the phonebook`);
+   // }
+}
+letMeTell()
+
+//Shopping list
 
