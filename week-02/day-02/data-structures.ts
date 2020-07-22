@@ -166,7 +166,7 @@ console.log(isbnMap.get(`978-1-60309-453-5`));
 
 let myMoney: number[] = [500, 1000, 1250, 175, 800, 120];
 
-function doTheMath(arr: number[]) {
+function doTheMath() {
     {
         let add: number = 0;
         for (let i = 0; i < myMoney.length; i++) {
@@ -177,9 +177,11 @@ function doTheMath(arr: number[]) {
         console.log(Math.max(...myMoney));
         console.log(Math.min(...myMoney));
         console.log((add / myMoney.length).toFixed(2));
+        console.log(Math.round(add / myMoney.length));
+
     }
 }
-doTheMath(myMoney);
+doTheMath();
 
 
 //Telephone book
@@ -193,14 +195,13 @@ phoneBook.set(`William A. Lathan`, `405-709-1865`)
     .set(`Amanda D. Newland`, `319-243-5613`)
     .set(`Brooke P. Askew`, `307-687-2982`)
 
-function letMeTell() {
+function letYouTellMe() {
 
     console.log(phoneBook.get(`John K. Miller`));
 
-    let recall: string;
     for (let [key, value] of phoneBook.entries()) {
         if (value === `307-687-2982`) {
-            recall = key;
+            var recall = key;
         }
     }
     console.log(recall);
@@ -208,11 +209,37 @@ function letMeTell() {
     if (!phoneBook.has(`Chris E. Myers`)) {
         console.log(`No entry on this name`);
     }
-   // else {
-   //     console.log(`There is a Chris E. Myers in the phonebook`);
-   // }
+    // else {
+    //     console.log(`There is a Chris E. Myers in the phonebook`);
+    // }
 }
-letMeTell()
+letYouTellMe()
 
 //Shopping list
 
+let shopping: string[] = [`eggs`, `milk`, `fish`, `apples`, `bread`, `chicken`];
+
+function doWeNeed() {
+    console.log(shopping.includes(`milk`));
+    console.log(shopping.includes(`bananas`));
+}
+doWeNeed();
+
+//Product database - WIP
+
+let groceryList = new Map;
+groceryList.set(`Eggs`, 200)
+    .set(`Milk`, 200)
+    .set(`Fish`, 400)
+    .set(`Apples`, 150)
+    .set(`Bread`, 50)
+    .set(`Chicken`, 550)
+
+function howMuch(){
+
+    console.log(groceryList.get(`Fish`));
+    console.log(Math.max(...groceryList.values()));
+   );
+    
+    
+}
