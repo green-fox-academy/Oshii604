@@ -1,6 +1,6 @@
 
 //List introduction 1
-/*
+
 {
 let names: string[] = [];
 
@@ -24,7 +24,7 @@ function listing(item: string){
     console.log(item);
 }
 
-/*
+
 names.forEach(listing2);
 function listing2(index: number, item: string){
     console.log((index), item);
@@ -45,9 +45,9 @@ names = [];
 
 console.log(names);
 }
-*/
 
-/*
+
+
 //Map introduction 1
 
 let oshiiMap = new Map();
@@ -91,10 +91,10 @@ oshiiMap.delete(97)
 console.log(oshiiMap.has(100));
 
 //oshiiMap.clear
-*/
+
 
 //List introduction 2
-/*
+
 let ListA: string[] = ['Apple', 'Avocado', 'Blueberries', 'Durian', 'Lychee'];
 let ListB: string[] = ListA.slice();
 
@@ -120,7 +120,7 @@ ListB.push(`Passion Fruit`, `Pomelo`)
 
 console.log(ListA[2]);
 
-*/
+
 
 //Map introduction 2
 
