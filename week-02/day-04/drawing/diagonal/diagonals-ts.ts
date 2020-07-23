@@ -7,13 +7,13 @@ const ctx = canvas.getContext('2d');
 
 ctx.beginPath();
 ctx.moveTo(0,0);
-ctx.lineTo(600,400);
+ctx.lineTo(canvas.width,canvas.height);
 ctx.strokeStyle = `green`
 ctx.stroke();
 
 ctx.beginPath();
-ctx.moveTo(600,0);
-ctx.lineTo(0,400);
+ctx.moveTo(canvas.width,0);
+ctx.lineTo(0,canvas.height);
 ctx.strokeStyle = `red`
 ctx.stroke();
 

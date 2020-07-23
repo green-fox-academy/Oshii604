@@ -5,8 +5,8 @@ const ctx = canvas.getContext('2d');
 
 // DO NOT TOUCH THE CODE ABOVE THIS LINE
 
-let w = 10;
-let h = 10;
+let w = 100;
+let h = 100;
 
 let startWidth = (canvas.width / 2 - w / 2);
 let startHeight = (canvas.height / 2 - h / 2);
