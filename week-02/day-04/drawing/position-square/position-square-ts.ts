@@ -12,7 +12,7 @@ function recDraw(x: number[], y: number[]) {
         ctx.fillRect(x[i], y[i], 50, 50)
     }
 }
-recDraw([30, 120, 420], [80, 110, 230]);
+recDraw([30, 190, 420], [80, 110, 230]);
 
 
 
