@@ -16,8 +16,6 @@ function randomColor() {
 }
 
 function drawSquare(x: number, y: string) {
-    ctx.fillStyle = y;
-    ctx.fillRect(canvas.width / 2 - x / 2, canvas.height / 2 - x / 2, x, x)
 
     let numberOfLines = canvas.height / x;
     let numberOfRows = canvas.width / x;
@@ -25,24 +23,22 @@ function drawSquare(x: number, y: string) {
     let v = 0;
     let h = 0;
 
-//Well, this is the fucked-up point for me :D
-    let drawLine = function () {
+    for (let i = 0; i < numberOfLines; i++) {
         for (let j = 0; j < numberOfRows; j++) {
             ctx.fillStyle = randomColor();
             ctx.fillRect(h, v, x, x,)
             h += x;
         }
-    }
-    for (let i = 0; i < numberOfLines; i++) {
-        drawLine();
+        h = 0;
         v += x;
     }
+    ctx.fillStyle = y;
+    ctx.fillRect(canvas.width / 2 - x / 2, canvas.height / 2 - x / 2, x, x)
 }
-drawSquare(40, `green`)
+drawSquare(50, `green`)
 
 
 // Create a square drawing function that takes 2 parameters:
 // The square size, and the fill color,
 // and draws a square of that size and color to the center of the canvas.
 // Create a loop that fills the canvas with a rainbow of colored squares.
-
