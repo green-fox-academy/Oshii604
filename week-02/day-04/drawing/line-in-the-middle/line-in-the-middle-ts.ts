@@ -19,3 +19,6 @@ ctx.moveTo(300, 50);
 ctx.lineTo(300, 350);
 ctx.strokeStyle = `red`;
 ctx.stroke();
+
+ctx.fillStyle = `green`;
+ctx.fillRect (20, 20, 30, 30);
