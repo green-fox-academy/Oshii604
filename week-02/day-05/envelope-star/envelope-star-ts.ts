@@ -22,23 +22,18 @@ let drawHalfOne = function () {
         }
         x = 0;
         y = canvas.width;
-        let c = 0;
-        c = b;
         b = a + 20;
     }
 }
 
 drawHalfOne()
 
-
-
-a = canvas.width/2;
 x = 0;
-b = canvas.width/2;
-y= 0;
-let drawHalfTwo = function () {
+b = canvas.width / 2;
+y = 0;
+let drawTopRight = function () {
     for (let i = 0; i < 1; i++) {
-       
+
         for (let j = 0; j < 15; j++) {
             ctx.beginPath();
             ctx.moveTo(b + x, a);
@@ -48,11 +43,6 @@ let drawHalfTwo = function () {
             y += 20;
             x += 20;
         }
-
-
-
     }
 }
-
-
-drawHalfTwo()
+drawTopRight()
