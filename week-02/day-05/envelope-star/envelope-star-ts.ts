@@ -26,6 +26,8 @@ let drawHalfOne = function () {
     }
 }
 
+//Splice!!!!!!!!! 
+
 drawHalfOne()
 
 x = 0;
