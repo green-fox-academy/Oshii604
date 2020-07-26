@@ -5,25 +5,25 @@ const ctx = canvas.getContext('2d');
 export { };
 
 
-function drawHalfOne(lc:number) {
+function drawHalfOne(lc: number) {
     for (let i = 0; i < 2; i++) {
-        let x = canvas.width/2;
-    let y = canvas.width/2 / lc;
-        for (let j = 0; i < lc; j++) {
+        let x = canvas.width / 2;
+        let y = canvas.width / 2 / lc;
+        for (let j = 0; j < lc; j++) {
             ctx.beginPath();
-            ctx.moveTo(x - y, 0);
-            ctx.lineTo(x, x - y);
+            ctx.moveTo(y - x, 0);
+            ctx.lineTo(y, y - x);
             ctx.strokeStyle = `lime`;
             ctx.stroke();
-            y += canvas.width/2 / lc
+            y += canvas.width / 2 / lc
         }
-      
+
     }
 }
 
 //Splice!!!!!!!!! 
 
-drawHalfOne(30)
+drawHalfOne(20)
 
 
 /*
@@ -49,7 +49,7 @@ let drawHalfOne = function () {
     }
 }
 
-//Splice!!!!!!!!! 
+//Splice!!!!!!!!!
 
 drawHalfOne()
 
