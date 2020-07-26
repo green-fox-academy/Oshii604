@@ -4,6 +4,29 @@ const canvas = document.querySelector('.main-canvas') as HTMLCanvasElement;
 const ctx = canvas.getContext('2d');
 export { };
 
+
+function drawHalfOne(lc:number) {
+    for (let i = 0; i < 2; i++) {
+        let x = canvas.width/2;
+    let y = canvas.width/2 / lc;
+        for (let j = 0; i < lc; j++) {
+            ctx.beginPath();
+            ctx.moveTo(x - y, 0);
+            ctx.lineTo(x, x - y);
+            ctx.strokeStyle = `lime`;
+            ctx.stroke();
+            y += canvas.width / lc
+        }
+      
+    }
+}
+
+//Splice!!!!!!!!! 
+
+drawHalfOne(30)
+
+
+/*
 let x = 0;
 let y = canvas.width / 2 - 20;
 let a = canvas.width / 2;
@@ -48,3 +71,4 @@ let drawTopRight = function () {
     }
 }
 drawTopRight()
+*/
