@@ -1,3 +1,4 @@
+
 function divide(count: number): any {
     if(count !== 0){
     return{

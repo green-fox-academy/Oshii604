@@ -160,7 +160,7 @@ for (let [key, value] of isbnMap.entries()) {
 console.log(isbnMap.has(`478-0-61159-424-8`));
 
 console.log(isbnMap.get(`978-1-60309-453-5`));
-*/
+
 
 //Personal Finance
 
@@ -214,7 +214,7 @@ function letYouTellMe() {
     // }
 }
 letYouTellMe()
-
+*/
 //Shopping list
 
 let shopping: string[] = [`eggs`, `milk`, `fish`, `apples`, `bread`, `chicken`];
@@ -226,7 +226,7 @@ function doWeNeed() {
 doWeNeed();
 
 //Product database - WIP
-
+/*
 let groceryList = new Map;
 groceryList.set(`Eggs`, 200)
     .set(`Milk`, 200)
@@ -243,3 +243,4 @@ function howMuch(){
     
     
 }
+*/

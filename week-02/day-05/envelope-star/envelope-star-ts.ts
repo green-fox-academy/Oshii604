@@ -15,7 +15,7 @@ function drawHalfOne(lc:number) {
             ctx.lineTo(x, x - y);
             ctx.strokeStyle = `lime`;
             ctx.stroke();
-            y += canvas.width / lc
+            y += canvas.width/2 / lc
         }
       
     }
