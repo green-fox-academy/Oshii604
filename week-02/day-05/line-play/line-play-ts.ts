@@ -4,7 +4,7 @@ const canvas = document.querySelector('.main-canvas') as HTMLCanvasElement;
 const ctx = canvas.getContext('2d');
 export { };
 
-function drawPurpleLine(lc: number) {
+let drawPurpleLine = (lc: number) => {
     let x = canvas.width;
     let y = canvas.width / lc;
     for (let i = 0; i < lc; i++) {
@@ -18,7 +18,7 @@ function drawPurpleLine(lc: number) {
 }
 drawPurpleLine(20);
 
-function drawGreenLine(lc: number) {
+let drawGreenLine = (lc: number) => {
     let x = canvas.width;
     let y = canvas.width / lc;
     for (let i = 0; i < lc; i++) {
