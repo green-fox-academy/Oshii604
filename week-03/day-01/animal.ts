@@ -11,14 +11,13 @@ export default class Animal {
         this.thirst = thirst
     }
     eat() {
-        this.hunger--
+        return this.hunger--
     }
     drink() {
-        this.thirst--
+        return this.thirst--
     }
     play() {
-        this.hunger++,
-            this.thirst++
+        return (this.hunger++), (this.thirst++)
     }
 }
 
