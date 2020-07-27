@@ -10,7 +10,7 @@ export default class Blogpost {
         this.authorName = authorName;
         this.title = title;
         this.text = text;
-        this.publicationDate = publicationDate
+        this.publicationDate = publicationDate;
     }
 }
 
