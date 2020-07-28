@@ -15,6 +15,7 @@ export default class Sharpie {
     }
 }
 
+/*
 let sharpie01 = new Sharpie(`blue`, 50)
 
 sharpie01.use()
@@ -27,3 +28,4 @@ sharpie01.use()
 sharpie01.use()
 
 console.log(sharpie01);
+*/

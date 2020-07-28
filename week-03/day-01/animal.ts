@@ -21,6 +21,8 @@ export default class Animal {
     }
 }
 
+/*
+//Hidden because of farm.ts
 let lion = new Animal(`Lion`)
 
 lion.eat()
@@ -34,3 +36,4 @@ lion.eat()
 lion.eat()
 lion.play()
 console.log(lion);
+*/
