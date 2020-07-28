@@ -1,17 +1,19 @@
+`use strict`
+
 class Student {
-    public learn() {
+    learn() {
         console.log(`The student is learning something new`);
     }
-    public question(Teacher) {
+    question(Teacher) {
         Teacher.answer()
     }
 }
 
 class Teacher {
-    public teach(Student) {
+    teach(Student) {
         Student.learn()
     }
-    public answer() {
+    answer() {
         console.log(`The teacher is answering a question`);
     }
 }
