@@ -19,11 +19,11 @@ class Farm {
         return this.animals
     }
 
-    
+
     //WIP
 
     slaughter() {
-        let afterSlaughter = this.animals.filter(animals => animals.hunger !== Math.floor(Math.min(Animal[animals.hunger])));
+        let afterSlaughter = this.animals.filter(animals => animals.hunger !== Math.floor(Math.min(Farm[animals.hunger])));
         return afterSlaughter
     }
 }
