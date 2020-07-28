@@ -2,12 +2,12 @@
 
 class Station {
     gasAmount: number;
-    constructor(gasAmount: number = 1000) {
+    constructor(gasAmount: number = 3000) {
         this.gasAmount = gasAmount;
     }
     refill(Car) {
-        Car.filling();
-        return this.gasAmount -= car.capacity
+        Car.gasAmount += Car.capacity
+        this.gasAmount -= Car.capacity
     }
 }
 
@@ -19,21 +19,17 @@ class Car {
         this.gasAmount = gasAmount;
         this.capacity = capacity;
     }
-    public filling() {
-        this.gasAmount += this.capacity
-    }
 }
-let station = new Station()
-let car = new Car()
+let omv = new Station()
+let subaru = new Car()
 
 //Checking the solution:
 
-console.log(`Right now the car has ${car.gasAmount} petrol in it!`);
-
-station.refill(car)
+console.log(`Right now the Subaru Impreza has ${subaru.gasAmount} petrol in it!`);
+omv.refill(subaru)
 console.log(`glu-glu-glu-glu-glu`);
-console.log(`Now it's ${car.gasAmount} petrol in the car!`);
-console.log(`The petrol station has ${station.gasAmount} left!`);
+console.log(`Now it's ${subaru.gasAmount} petrol in the Subaru Impreza!`);
+console.log(`The OMV petrol station has ${omv.gasAmount} petrol left!`);
 
 
 
