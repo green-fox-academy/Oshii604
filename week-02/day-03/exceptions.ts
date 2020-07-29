@@ -19,21 +19,17 @@ console.log(divide(50));
 console.log(divide(0));
 */
 
-
 function divideTen(x: number): number {
-    if (x === 0) {
-        throw new Error("Elbasztad hapsikám");
-    }
-    else {
-        return 10 / x;
-    }
+  if (x === 0) {
+    throw new Error(`Elbasztad hapsikám`);
+  } else {
+    return 10 / x;
+  }
 }
 try {
-    console.log(divideTen(0));
-}
-catch (err) {
-    console.log(err.message);
+  console.log(divideTen(0));
+} catch (err) {
+  console.log(err.message);
 }
 console.log(divideTen(5));
 console.log(divideTen(0));
-

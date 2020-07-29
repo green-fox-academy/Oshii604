@@ -1,37 +1,43 @@
-`use strict`
+import Animal from './animal';
 
-import Animal from "./animal";
-import { listenerCount } from "process";
+`use strict`;
 
 class Farm {
-    animals: Animal[];
-    slots: number;
+  animals: Animal[];
 
-    constructor(animals: Animal[], slots = 10) {
-        this.animals = animals;
-        this.slots = slots;
+  slots: number;
+
+  constructor(animals: Animal[], slots = 10) {
+    this.animals = animals;
+    this.slots = slots;
+  }
+
+  breed() {
+    for (let i = 1; i <= this.slots; i++) {
+      this.animals.push(
+        new Animal(
+          `animal${i}`,
+          Math.floor(Math.random() * 50 + 1),
+          Math.floor(Math.random() * 50 + 1),
+        ),
+      );
     }
+    return this.animals;
+  }
 
-    breed() {
-        for (let i = 1; i <= this.slots; i++) {
-            this.animals.push(new Animal(`animal` + i, Math.floor(Math.random() * 50 + 1), Math.floor(Math.random() * 50 + 1)))
-        }
-        return this.animals
-    }
+  // WIP - not yet working
 
-
-    //WIP
-
-    slaughter() {
-        let afterSlaughter = this.animals.filter(animals => animals.hunger !== Math.floor(Math.min(Farm[animals.hunger])));
-        return afterSlaughter
-    }
+  slaughter() {
+    const afterSlaughter = this.animals.filter(
+      (animals) => animals.hunger === Math.floor(Math.min()),
+    );
+    return afterSlaughter;
+  }
 }
 
-let farm = new Farm([])
+const farm = new Farm([]);
 
 console.log(farm.breed());
+console.log(farm);
+
 console.log(farm.slaughter());
-
-
-

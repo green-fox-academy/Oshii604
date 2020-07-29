@@ -1,0 +1,5 @@
+helloka
+This is a multilined text, that my program should read.
+Hope, everything's gonna be alright with it.
+Cheers
+ps.: this is the 5th line

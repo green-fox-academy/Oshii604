@@ -1,5 +1,4 @@
-
-//List introduction 1
+// List introduction 1
 /*
 {
     let names: string[] = [];
@@ -31,9 +30,9 @@
         function listingTwo(index: number, item: string) {
             console.log((index), item);
         }
-    
+
         names.splice(names.indexOf(names[1]), 1);
-    
+
         console.log(names);
     */
 /*
@@ -48,8 +47,6 @@
 
     console.log(names);
 }
-
-
 
 //Map introduction 1
 
@@ -95,7 +92,6 @@ console.log(oshiiMap.has(100));
 
 //oshiiMap.clear
 
-
 //List introduction 2
 
 let ListA: string[] = ['Apple', 'Avocado', 'Blueberries', 'Durian', 'Lychee'];
@@ -123,8 +119,6 @@ ListB.push(`Passion Fruit`, `Pomelo`)
 
 console.log(ListA[2]);
 
-
-
 //Map introduction 2
 
 let isbnMap = new Map();
@@ -149,7 +143,6 @@ for (let [key, value] of isbnMap.entries()) {
     console.log(value + ` (ISBN: ` + key + `)`)
 }
 
-
 isbnMap.set(`978-1-60309-450-4`, `They Called Us Enemy`)
     .set(`978-1-60309-453-5`, `Why Did We Trust Him?`)
 
@@ -160,7 +153,6 @@ for (let [key, value] of isbnMap.entries()) {
 console.log(isbnMap.has(`478-0-61159-424-8`));
 
 console.log(isbnMap.get(`978-1-60309-453-5`));
-
 
 //Personal Finance
 
@@ -183,9 +175,7 @@ function doTheMath() {
 }
 doTheMath();
 
-
 //Telephone book
-
 
 let phoneBook = new Map();
 
@@ -215,17 +205,17 @@ function letYouTellMe() {
 }
 letYouTellMe()
 */
-//Shopping list
+// Shopping list
 
-let shopping: string[] = [`eggs`, `milk`, `fish`, `apples`, `bread`, `chicken`];
+const shopping: string[] = [`eggs`, `milk`, `fish`, `apples`, `bread`, `chicken`];
 
 function doWeNeed() {
-    console.log(shopping.includes(`milk`));
-    console.log(shopping.includes(`bananas`));
+  console.log(shopping.includes(`milk`));
+  console.log(shopping.includes(`bananas`));
 }
 doWeNeed();
 
-//Product database - WIP
+// Product database - WIP
 /*
 let groceryList = new Map;
 groceryList.set(`Eggs`, 200)
@@ -240,7 +230,6 @@ function howMuch(){
     console.log(groceryList.get(`Fish`));
     console.log(Math.max(...groceryList.values()));
    );
-    
-    
+
 }
 */
