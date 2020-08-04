@@ -22,8 +22,10 @@ export default class Sponsor extends Person {
     super.introduce(`who represents ${this.company}, and hired ${this.hireStudents} so far`);
   }
 }
+/*
 const oshii = new Sponsor(`Oshii`, 37, `male`, `AMC`);
 
 oshii.hire();
 oshii.introduce();
 oshii.getGoal();
+*/

@@ -16,7 +16,9 @@ export default class Mentor extends Person {
     );
   }
 }
+/*
 const jane = new Mentor(`Jane mámegint`, 30, `female`, `senior`);
 
 jane.introduce();
 jane.getGoal();
+*/

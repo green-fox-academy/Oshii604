@@ -30,6 +30,8 @@ export default class Person {
   }
 }
 
+/*
 const jane = new Person(`Jane Doe`, 30, `female`, `Live for the moment`);
 jane.introduce();
 jane.getGoal();
+*/

@@ -24,7 +24,7 @@ export default class Student extends Person {
     );
   }
 }
-
+/*
 const jane = new Student(
   `Jane Doe`,
   30,
@@ -35,3 +35,4 @@ const jane = new Student(
 jane.skipDays(3);
 jane.introduce();
 jane.getGoal();
+*/
