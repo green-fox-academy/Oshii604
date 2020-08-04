@@ -10,13 +10,20 @@ module.exports = {
       typescript: {},
     },
   },
+
   rules: {
-    'no-console': 'off',
-    quotes: [
-      2,
-      'single',
-      { allowTemplateLiterals: true },
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never',
+      },
     ],
+    'no-console': 'off',
+    quotes: [2, 'single', { allowTemplateLiterals: true }],
     'import/no-extraneous-dependencies': [
       2,
       { devDependencies: ['**/test.ts'] },
