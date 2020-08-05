@@ -3,16 +3,37 @@ export default abstract class Animal {
 
   protected age: number;
 
-  constructor(name: string, age: number) {
+  protected canFly: boolean;
+
+  protected legs: number;
+
+  constructor(
+    name: string,
+    age: number,
+    canFly: boolean,
+    legs: number,
+  ) {
     this.name = name;
     this.age = age;
+    this.canFly = canFly;
+    this.legs = legs;
   }
 
-  abstract getName () {
-
+  getName(): string {
+    return this.name;
   }
 
-  abstract breed () {
-
+  getAge(): number {
+    return this.age;
   }
+
+  canItFly(): boolean {
+    return this.canFly;
+  }
+
+  getNumberOfLegs(): number {
+    return this.legs;
+  }
+
+  abstract breed(): void;
 }
