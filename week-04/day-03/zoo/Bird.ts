@@ -1,5 +1,5 @@
 import Animal from './Animal';
 
-export default class Bird {
+export default class Bird extends Animal {
 
 }
