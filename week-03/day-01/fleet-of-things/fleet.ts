@@ -1,6 +1,6 @@
-import { Thing } from './thing';
+import Thing from './thing';
 
-class Fleet {
+export default class Fleet {
   private things: Thing[];
 
   constructor() {
@@ -15,5 +15,3 @@ class Fleet {
     return this.things;
   }
 }
-
-export { Fleet };

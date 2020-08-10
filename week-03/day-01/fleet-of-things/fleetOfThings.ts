@@ -1,19 +1,22 @@
-import { Thing } from './thing';
-import { Fleet } from './fleet';
+import Thing from './thing';
+import Fleet from './fleet';
 
-let fleet = new Fleet();
+export default class FleetOfThings {
+  private fleet: Fleet;
 
-// -  You have the `Thing` class
-// -  You have the `Fleet` class
-// -  Create the `FleetOfThings` class with a `main` method
-// -  Download those, use those
-// -  In the `main` method create a fleet
-// -  Achieve this output:
-//  Crete a fleet of things to have this output:
+  main(...things: Thing[]): void {
+    this.fleet = new Fleet();
+    things.forEach((thing) => this.fleet.add(thing));
+  }
 
-// 1. [ ] Get milk
-// 2. [ ] Remove the obstacles
-// 3. [x] Stand up
-// 4. [x] Eat lunch
-
-// Hint: You have to create a `print()` method as well 
+  print(): void {
+    for (let i = 0; i < this.fleet.getThings().length; i++) {
+      const completeStatus = this.fleet.getThings()[i].getCompleted()
+        ? '[x]'
+        : '[ ]';
+      console.log(
+        `${i + 1}. ${completeStatus} ${this.fleet.getThings()[i].getName()}`,
+      );
+    }
+  }
+}
