@@ -26,9 +26,12 @@ test('Checks what happens if I give 5-digit number', (t) => {
 
 test('Checks what happens if I give string instead of number', (t) => {
   const num = `apple`;
-  const actual = humanize(num);
-  const expected = `You should give me a number to work with!`;
-
-  t.equal(actual, expected);
+  t.throws(
+    () => {
+      humanize(num);
+    },
+    Error,
+    `You should give me a number to work with!`,
+  );
   t.end();
 });

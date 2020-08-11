@@ -1,7 +1,6 @@
 {
-  function getAverage(a, b, c, d)
-  // let getAverage = function (a, b, c, d)
-  {
+  function getAverage(a, b, c, d) {
+    // let getAverage = function (a, b, c, d)
     const average = (a + b + c + d) / getAverage.length;
     console.log(average);
 
@@ -47,7 +46,8 @@ callFunction(sayByeBye);
   add(2, 6);
 }
 
-{ const z = 200;
+{
+  const z = 200;
   function addToZ(x, y) {
     const sum = x + y + z;
     console.log(sum);
@@ -87,7 +87,7 @@ const myAdd2: (baseValue: number, increment: number) => number = function (
 myAdd2(12, 24);
 
 // Next
-function greet():string {
+function greet(): string {
   return 'Hello World';
 }
 function caller() {
@@ -97,18 +97,20 @@ function caller() {
 caller();
 
 // Next
-function test_param(n1:number, s1:string) {
+function test_param(n1: number, s1: string) {
   console.log(n1);
   console.log(s1);
 }
 test_param(123, 'this is a string');
 
 // Next
-function dispDetails(id:number, name:string, mail_id?:string) {
+function dispDetails(id: number, name: string, mail_id?: string) {
   console.log('ID:', id);
   console.log('Name ', name);
 
-  if (mail_id != undefined) { console.log('Email Id ', mail_id); }
+  if (mail_id != undefined) {
+    console.log('Email Id ', mail_id);
+  }
 }
 dispDetails(123, 'John');
 dispDetails(111, 'mary', 'mary@xyz.com');
@@ -142,15 +144,15 @@ myAverage(1, 2, 3);
 myAverage(13, 43, 2, 3, 15);
 
 // Next
-function calculate_discount(price:number, rate = 0.50) {
+function calculate_discount(price: number, rate = 0.5) {
   const discount = price * rate;
   console.log('Discount Amount: ', discount);
 }
 calculate_discount(1000);
-calculate_discount(1000, 0.30);
+calculate_discount(1000, 0.3);
 
 // Next, altered
-function calculate_discount2(rate:number, price = 1000) {
+function calculate_discount2(rate: number, price = 1000) {
   const discount = rate * price;
   console.log('Discount Amount: ', discount);
 }
@@ -185,6 +187,6 @@ function factorial(number) {
   if (number <= 0) {
     return 1;
   }
-  return (number * factorial(number - 1));
+  return number * factorial(number - 1);
 }
 console.log(factorial(4));
