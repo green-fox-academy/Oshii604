@@ -1,8 +1,9 @@
 class Domino {
-    values: number[];
-    constructor(valueA: number, valueB: number) {
-        this.values = [valueA, valueB];
-    }
+  values: number[];
+
+  constructor(valueA: number, valueB: number) {
+    this.values = [valueA, valueB];
+  }
 }
 
-export {Domino};
+export { Domino };

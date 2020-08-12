@@ -13,7 +13,6 @@ test(`writing Apple`, (t) => {
 
 // This is, when the test fails:
 
-/*
 test(`writing Apple`, (t) => {
   const apple02 = new Apples(`Csúnya Apple`);
 
@@ -23,4 +22,3 @@ test(`writing Apple`, (t) => {
   t.equal(actual, expected);
   t.end();
 });
-*/

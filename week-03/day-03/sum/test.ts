@@ -4,18 +4,18 @@ import Numbers from './sum';
 test('sum list of numbers', (t) => {
   const listOfNumbers = new Numbers([]);
 
-  const actual = listOfNumbers.sum([]);
-  const expected = 0;
+  const actual = listOfNumbers.sum([5, 6]);
+  const expected = 11;
 
   t.equal(actual, expected);
   t.end();
 });
 
 test('sum list of numbers', (t) => {
-  const listOfNumbers = new Numbers([]);
+  const listOfNumbers = new Numbers([5, 6]);
 
   const actual = listOfNumbers.sum([]);
-  const expected = 0;
+  const expected = 10;
 
   t.equal(actual, expected);
   t.end();

@@ -14,17 +14,25 @@ class Garden {
     }
   }
 
-  checkStatus(): void{
+  // ???
+  checkStatus(): void {
     this.inNeedOfWater = 0;
-    this.plants.forEach((plant) => {
-      if (plant.doesItNeedWater()) {
+    /*
+    for (let i = 0; i < this.plants.length; i++) {
+      if (this.plants.doesItNeedWater() === true) {
         this.inNeedOfWater++;
       }
-      plant.getStatus();
+    }
+    */
+    this.plants.forEach((noveny) => {
+      if (noveny.doesItNeedWater()) {
+        this.inNeedOfWater++;
+      }
+      noveny.getStatus();
     });
   }
 
-  wateringPlants(water: number) {
+  wateringPlants(water: number): void {
     console.log(`Watering with ${water}`);
     this.plants.forEach((plant) => {
       if (plant.doesItNeedWater()) {

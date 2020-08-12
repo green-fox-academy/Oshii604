@@ -1,17 +1,33 @@
-import test, { test } from 'tape';
-import { anagramChecker } from './anagram';
+import test from 'tape';
+import anagramChecker from './anagram';
 
-import AnagramsOrNot from './anagrams';
+// one more space
+test('Checks if two strings are anagrams or not', (t) => {
+  const line1 = 'hello World';
+  const line2 = 'oo hell rWdl';
+  const actual = anagramChecker(line1, line2);
+  const expected = true;
 
-test('check if anagrams', (t) => {
-  t.equal(anagramChecker('apple', 'notapple'), true);
+  t.equal(actual, expected);
   t.end();
 });
 
 test('Checks if two strings are anagrams or not', (t) => {
-  const string1 = 'yo';
-  const string2 = 'oy';
-  const actual = AnagramsOrNot(string1, string2);
+  const line1 = 'hello World';
+  const line2 = 'oohell rWdl';
+  const actual = anagramChecker(line1, line2);
+  const expected = true;
+
+  t.equal(actual, expected);
+  t.end();
+});
+
+// Uppercase - lowercase problem
+
+test('Checks if two strings are anagrams or not', (t) => {
+  const line1 = 'hello World';
+  const line2 = 'olleh dlrow';
+  const actual = anagramChecker(line1, line2);
   const expected = true;
 
   t.equal(actual, expected);

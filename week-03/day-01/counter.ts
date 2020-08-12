@@ -1,28 +1,29 @@
 `use strict`;
 
 export default class Counter {
-    int: number;
+  int: number;
 
-    constructor(int: number = 0,) {
-        this.int = int;
+  constructor(int = 0) {
+    this.int = int;
+  }
+
+  add(number?: number) {
+    if (number === undefined) {
+      return this.int++;
     }
-    add(number?: number) {
-        if (number === undefined) {
-            return this.int++
-        }
-        else {
-            return this.int += number
-        }
-    }
-    get() {
-        return this.int.toString();
-    }
-    reset() {
-        return this.int = 0;
-    }
+    return (this.int += number);
+  }
+
+  get() {
+    return this.int.toString();
+  }
+
+  reset() {
+    return (this.int = 0);
+  }
 }
 
-let counter01 = new Counter(10);
+const counter01 = new Counter(10);
 console.log(counter01.int);
 
 counter01.add();
@@ -33,5 +34,3 @@ console.log(counter01.get());
 console.log(counter01.int);
 
 console.log(counter01.reset());
-
-

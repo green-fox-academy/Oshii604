@@ -1,5 +1,5 @@
-export default function anagramChecker(word1: string, word2: string): boolean {
-  if (word1.split('').sort().join('') === word2.split('').sort().join('')) {
+export default function anagramChecker(line1: string, line2: string): boolean {
+  if (line1.split('').sort().join('').toLowerCase === line2.split('').sort().join('').toLowerCase) {
     return true;
   }
   return false;
