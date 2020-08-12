@@ -1,7 +1,7 @@
 import Plant from './Plant';
 
 export default class Tree extends Plant {
-  waterAbsorption: number;
+  protected waterAbsorption: number;
 
   constructor(color: string, waterAbsorption = 0.4) {
     super(color, 10);

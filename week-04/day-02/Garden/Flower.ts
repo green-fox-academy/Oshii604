@@ -1,7 +1,7 @@
 import Plant from './Plant';
 
 export default class Flower extends Plant {
-  waterAbsorption: number;
+  protected waterAbsorption: number;
 
   constructor(color: string, waterAbsorption = 0.75) {
     super(color, 5);

@@ -2,7 +2,7 @@ import Tree from './Tree';
 import Flower from './Flower';
 import Plant from './Plant';
 
-class Garden {
+export default class Garden {
   plants: Plant[] = [];
 
   inNeedOfWater = 0;
@@ -17,19 +17,32 @@ class Garden {
   // ???
   checkStatus(): void {
     this.inNeedOfWater = 0;
-    /*
+
     for (let i = 0; i < this.plants.length; i++) {
-      if (this.plants.doesItNeedWater() === true) {
+      if (this.plants[i].doesItNeedWater() === true) {
         this.inNeedOfWater++;
       }
+      this.plants[i].getStatus();
     }
-    */
+
+    // Ez pont ugyanaz, csak még nem tudom használni :D
+    /*
     this.plants.forEach((noveny) => {
       if (noveny.doesItNeedWater()) {
         this.inNeedOfWater++;
       }
       noveny.getStatus();
     });
+    */
+    // ez is ugyanaz, csak nincs indexe
+    /*
+    for (const plant of this.plants) {
+      if (plant.doesItNeedWater()) {
+        this.inNeedOfWater++;
+      }
+      plant.getStatus();
+    }
+    */
   }
 
   wateringPlants(water: number): void {
@@ -41,24 +54,3 @@ class Garden {
     });
   }
 }
-
-const myGarden = new Garden();
-
-const purpleTree = new Tree(`purple`);
-myGarden.addPlant(purpleTree);
-const orangeTree = new Tree(`orange`);
-myGarden.addPlant(orangeTree);
-const yellowFlower = new Flower(`yellow`);
-myGarden.addPlant(yellowFlower);
-const blueFlower = new Flower(`blue`);
-myGarden.addPlant(blueFlower);
-
-// console.log(myGarden);
-myGarden.checkStatus();
-myGarden.wateringPlants(40);
-// console.log(myGarden);
-myGarden.checkStatus();
-myGarden.wateringPlants(70);
-// console.log(myGarden);
-myGarden.checkStatus();
-console.log(myGarden);

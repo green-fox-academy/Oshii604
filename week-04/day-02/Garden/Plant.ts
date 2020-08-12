@@ -1,12 +1,14 @@
 export default abstract class Plant {
-  color: string;
+  protected color: string;
 
-  waterLevel: number;
+  protected waterLevel: number;
 
-  whenNeedsWater: number;
+  protected whenNeedsWater: number;
 
-  needsWater: boolean;
+  protected needsWater: boolean;
 
+  // waterabsorption ide, 1-es default értékkel,
+  // majd tree-flowernél definiálva, watering már itt tud működni w.abs szorzóval.
   constructor(color: string, whenNeedsWater: number) {
     this.color = color;
     this.waterLevel = 0;
