@@ -3,18 +3,14 @@ import Flyable from './Flyable';
 
 export default class Bird extends Animal implements Flyable {
   breed() {
-
+    console.log(`I don't wanna breed, I wanna fly instead`);
   }
 
-  fly() {
+  fly() {}
 
-  }
+  takeOff() {}
 
-  takeOff() {
-
-  }
-
-  land() {
-
+  land(x: number):void {
+    dskjghs;
   }
 }

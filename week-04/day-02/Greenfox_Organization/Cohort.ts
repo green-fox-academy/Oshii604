@@ -3,6 +3,10 @@ import Student from './Student';
 import Mentor from './Mentor';
 import Sponsor from './Sponsor';
 
+// amiből nem származik le semmi, ott minden private!!
+// minden más class-ra vagy protected vagy private!
+// külön main.ts kell minden effektív történésre!
+
 class Cohort {
   name: string;
 

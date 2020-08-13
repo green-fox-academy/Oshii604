@@ -25,6 +25,8 @@ export default abstract class Plant {
     return this.needsWater;
   }
 
+  // ha get-el kezdődik egy function, return-ölnie kellene valamit. Inkább máshogy kezdődjön.
+  // átalakítani, hogy return-ben kapjak string-et, és azt majd a main-ben ki-console.log-olni
   public getStatus(): void {
     if (this.waterLevel < this.whenNeedsWater) {
       console.log(`Please water ${this.color} ${this.constructor.name}`);

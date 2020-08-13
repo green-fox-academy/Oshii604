@@ -1,5 +1,5 @@
 export default interface Flyable {
-  land();
+  land(x: number):void;
   fly();
   takeOff();
 };
