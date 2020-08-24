@@ -22,7 +22,7 @@ export default class Garden {
       if (this.plants[i].doesItNeedWater() === true) {
         this.inNeedOfWater++;
       }
-      this.plants[i].getStatus();
+      this.plants[i].printStatus();
     }
 
     // Ez pont ugyanaz, csak még nem tudom használni :D
@@ -31,7 +31,7 @@ export default class Garden {
       if (noveny.doesItNeedWater()) {
         this.inNeedOfWater++;
       }
-      noveny.getStatus();
+      noveny.printStatus();
     });
     */
     // ez is ugyanaz, csak nincs indexe
