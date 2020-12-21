@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktail list</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <h1>Cocktails</h1>
+    <main>
+        <ul class="alcohols">
+            <li> 
+                <a href="/"> all </a> 
+            </li>
+            <% for (let i = 0;i < alcohols.length; i++) { %>
+                <li> 
+                    <a href="http://localhost:3000/?alcohol=<%= alcohols[i] %>"> 
+                        <%= alcohols[i] %> 
+                    </a> 
+                </li>
+            <% } %>
+        </ul>
+        <table>
+            <th>NAME</th>
+            <th>PRICE</th>
+            <% for (let i = 0; i < cocktails.length; i++) { %>
+                <tr>
+                    <td>
+                        <h3> <%= cocktails[i].name %>
+                            <% if (cocktails[i].isAlcoholic === false) { %>
+                                <span>(non-alcoholic)</span>
+                            <% } %>
+                        </h3>
+                        <p> <%= cocktails[i].contains %> </p>
+                    </td>
+                    <td>
+                        <%= cocktails[i].price %> Ft
+                    </td>
+                </tr>
+            <% } %>
+        </table>
+    </main>
+</body>
+</html>

@@ -5,6 +5,10 @@
   "main": "index.js",
   "dependencies": {
     "@pelevesque/is-anagram": "^1.0.2",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "moment": "^2.27.0",
+    "mysql": "github:mysqljs/mysql",
     "pirate-name-generator": "^1.0.0"
   },
   "devDependencies": {
@@ -19,6 +23,7 @@
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-json": "^2.1.2",
     "eslint-plugin-prettier": "^3.1.4",
+    "nodemon": "^2.0.4",
     "prettier": "^2.0.5",
     "tape": "^5.0.1",
     "typescript": "^3.9.7"

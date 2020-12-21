@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Login Form</title>
+</head>
+<body>
+    <div>
+        <form>
+            <p>ACCOUNT LOGIN</p>
+            <div>
+                <label for="userName">USERNAME</label>
+                <input 
+                type="text" 
+                name="userName" 
+                id="userName"/>
+            </div>
+            <div id="pwd">
+                <label for="password">PASSWORD</label>
+                <input 
+                type="password" 
+                name="password" 
+                id="password"/>
+                <img src="./img/eye.png" id="show" alt="">
+            </div>
+            <div class="forgot-password"><a  href="">Forgot password?</a></div>
+            <button>Login</button>
+        </form>
+    </div>
+    <script>
+        const show = document.querySelector('#show');
+        const pwd = document.querySelector('#password');
+        show.addEventListener('click', () => {
+            if (pwd.type === 'password'){
+                pwd.setAttribute('type', 'text')
+            } else {
+                pwd.setAttribute('type', 'password')
+            }
+        })
+    </script>
+</body>
+</html> 

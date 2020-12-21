@@ -1,0 +1,15 @@
+.container {
+height: 300px;
+width: 800px;
+display: flex;
+background: yellow;
+align-items: center;
+justify-content: center;
+}
+
+.box{
+height: 100px;
+width: 100px;
+background: purple;
+/*align-self: center;*/
+}

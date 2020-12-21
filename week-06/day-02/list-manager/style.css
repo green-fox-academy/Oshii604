@@ -1,0 +1,32 @@
+body {
+    margin: 0 auto;
+    background: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 600px;
+}
+
+div{
+    border: 1.5px solid black;
+    width: 200px;
+    height: 200px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buttons {
+    border: none;
+    background: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.selected{
+    background: lightsalmon;
+}

@@ -1,0 +1,14 @@
+  
+/* 
+i'm just going to put some basic stuff 
+i use in every css file i ever write
+it can be useful
+cheatsheets are also linked in the readme
+*/
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   }

@@ -1,0 +1,84 @@
+body{
+    background: lightgray;
+    margin: 0;
+    font-family: arial;
+    display: flex;
+    height: 700px;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    margin: 20px;
+    padding: 15px;
+    background-color: #fffeff;
+    width: 350px;
+    border-radius: 10px;
+    color: #404040
+}
+
+form p, label{
+    font-size: 20px;
+    letter-spacing: 0.1em;
+
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+label, input, button{
+    display: block;
+    margin: 15px;
+    margin-left: 70px;
+    font-size: 14px;
+    
+}
+
+input[type="text"],
+input[type="password"] {
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 2px solid lightslategray;
+    
+}
+
+#pwd {
+    position: relative;
+}
+
+#show {
+position: absolute;
+bottom: 10px;
+right: 95px;
+height: 18px;
+}
+
+input[type="password"] {
+    background-image: url(img/eye.png) no-repeat;
+    background-size: 30px;
+}
+
+/*should be a child of the password input*/
+.forgot-password{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 70px;
+    font-size: 13px;
+}
+
+button{
+    border-radius: 30px;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    padding: 12px;
+}
+
+input:focus {
+    border: #CCFFE5 solid 2px;
+}

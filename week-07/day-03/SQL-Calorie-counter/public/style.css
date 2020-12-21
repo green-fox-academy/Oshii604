@@ -1,0 +1,13 @@
+body {
+  padding: 30px;
+  margin: auto;
+  width: 800px;
+  background: rgb(75,17,74);
+background: radial-gradient(circle, rgba(75,17,74,0.8547794117647058) 0%, rgba(33,152,31,0.8547794117647058) 49%, rgba(49,181,223,0.8463760504201681) 100%) no-repeat;
+}
+
+h1 {
+    justify-content: center;
+    display: flex;
+    background: rgb(224,27,27);
+background: radial-gradient(circle, rgba(224,27,27,1) 0%, rgba(241,242,37,1) 17%, rgba(91,228,35,1) 34%, rgba(28,252,205,1) 51%, rgba(23,114,240,1) 68%, rgba(138,28,233,1) 85%, rgba(235,13,226,1) 100%);

@@ -1,0 +1,37 @@
+body {
+  width: 1024px;
+  margin: auto;
+}
+
+header {
+  height: 50px;
+  background-color: purple;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: flex-start;
+}
+
+a {
+  box-sizing: border-box;
+  width: 120px;
+  height: 30px;
+  margin: 10px;
+  padding: 5px;
+  background-color: cyan;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 800px;
+}
+
+.yellow {
+  background-color: yellow;
+  flex-grow: 7;
+}
+aside {
+  background-color: lime;
+  flex-grow: 3;
+}

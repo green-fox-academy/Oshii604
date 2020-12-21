@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  min-height: 60px;
+  background: purple;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  column-gap: 20px;
+  padding-left: 5%;
+}
+
+a {
+  box-sizing: border-box;
+  width: 100px;
+  height: 30px;
+  background: cyan;
+  padding: 5px;
+  margin: 10px 0px;
+}
+
+.second {
+  width: 150px;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  margin: 80px auto 20px;
+  max-width: 90%;
+  column-gap: 20px;
+}
+
+.yellow {
+  background-color: yellow;
+  flex-grow: 3;
+}
+
+aside {
+  background-color: lime;
+  flex-grow: 1;
+}
+
+footer {
+  background-color: lightgrey;
+  height: 60px;
+  max-width: 90%;
+  margin: auto;
+}

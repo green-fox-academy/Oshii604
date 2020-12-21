@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+    width: device-width;
+    height: 100vh;
+    display: flex;
+    /* flex-direction: row-reverse; */
+    max-width: 400px;
+    flex-direction: column;
+}
+
+.item {
+    box-sizing: border-box;
+    display: block;
+}
+
+
+.lime {
+    background: lime;
+    flex-grow: 1;
+}
+.yellow {
+    background: yellow;
+    flex-grow: 2;
+    order: 3;
+}
+.purple {
+    background: purple;
+    flex-grow: 1;
+}
